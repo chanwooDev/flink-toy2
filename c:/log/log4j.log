@@ -1,0 +1,7 @@
+[2024-01-31 22:25:42,378] [DEBUG] [StreamGraphGenerator.java:530] - Transforming OneInputTransformation{id=3, name='fraud-detector', outputType=PojoType<org.apache.flink.walkthrough.common.entity.Alert, fields = [id: Long]>, parallelism=10}
+[2024-01-31 22:25:42,379] [DEBUG] [StreamGraphGenerator.java:530] - Transforming PartitionTransformation{id=2, name='Partition', outputType=PojoType<org.apache.flink.walkthrough.common.entity.Transaction, fields = [accountId: Long, amount: Double, timestamp: Long]>, parallelism=1}
+[2024-01-31 22:25:42,380] [DEBUG] [StreamGraphGenerator.java:530] - Transforming LegacySourceTransformation{id=1, name='transactions', outputType=PojoType<org.apache.flink.walkthrough.common.entity.Transaction, fields = [accountId: Long, amount: Double, timestamp: Long]>, parallelism=1}
+[2024-01-31 22:25:42,383] [DEBUG] [StreamGraph.java:431] - Vertex: 1
+[2024-01-31 22:25:42,394] [DEBUG] [StreamGraph.java:431] - Vertex: 3
+[2024-01-31 22:25:42,395] [DEBUG] [StreamGraphGenerator.java:530] - Transforming LegacySinkTransformation{id=4, name='send-alerts', outputType=PojoType<org.apache.flink.walkthrough.common.entity.Alert, fields = [id: Long]>, parallelism=10}
+[2024-01-31 22:25:42,395] [DEBUG] [StreamGraph.java:431] - Vertex: 4
